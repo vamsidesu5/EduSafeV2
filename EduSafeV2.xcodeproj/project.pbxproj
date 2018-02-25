@@ -29,6 +29,7 @@
 		AC93E77720426E69007E052B /* AdministratorRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93E77620426E69007E052B /* AdministratorRequestTableViewController.swift */; };
 		AC93E7792042771D007E052B /* AdministratorFeedDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93E7782042771D007E052B /* AdministratorFeedDescriptionViewController.swift */; };
 		AC93E77B20427920007E052B /* StudentFeedDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93E77A20427920007E052B /* StudentFeedDescriptionViewController.swift */; };
+		AC93E77D20427D01007E052B /* AdministratorRequestDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93E77C20427D01007E052B /* AdministratorRequestDescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		AC93E77620426E69007E052B /* AdministratorRequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministratorRequestTableViewController.swift; sourceTree = "<group>"; };
 		AC93E7782042771D007E052B /* AdministratorFeedDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministratorFeedDescriptionViewController.swift; sourceTree = "<group>"; };
 		AC93E77A20427920007E052B /* StudentFeedDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFeedDescriptionViewController.swift; sourceTree = "<group>"; };
+		AC93E77C20427D01007E052B /* AdministratorRequestDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministratorRequestDescriptionViewController.swift; sourceTree = "<group>"; };
 		BCF435AE121733063A667160 /* Pods-EduSafeV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2Tests/Pods-EduSafeV2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C6BE064B652DC16925EA41BB /* Pods_EduSafeV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EduSafeV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6B62008A5BE2A26DC8CE09 /* Pods-EduSafeV2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2UITests/Pods-EduSafeV2UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,23 +164,24 @@
 			isa = PBXGroup;
 			children = (
 				AC5CAA2D204234ED00D47DCE /* AppDelegate.swift */,
-				AC5CAA2F204234ED00D47DCE /* ViewController.swift */,
 				AC5CAA31204234ED00D47DCE /* Main.storyboard */,
 				AC5CAA34204234ED00D47DCE /* Assets.xcassets */,
 				AC5CAA36204234ED00D47DCE /* LaunchScreen.storyboard */,
 				AC5CAA39204234ED00D47DCE /* Info.plist */,
-				AC5CAA5F2042496B00D47DCE /* AdministratorSettingsViewController.swift */,
-				AC5CAA612042497600D47DCE /* StudentSettingsViewController.swift */,
+				AC5CAA2F204234ED00D47DCE /* ViewController.swift */,
 				AC5CAA5B2042459F00D47DCE /* AdministratorLoginViewController.swift */,
-				AC5CAA5D204245B100D47DCE /* StudentLoginViewController.swift */,
-				AC5CAA63204251FD00D47DCE /* AdministratorReportViewController.swift */,
-				AC5CAA65204252DB00D47DCE /* StudentReportViewController.swift */,
-				4941828F2042675900219251 /* AFLogin.swift */,
 				AC93E77220426E41007E052B /* AdministratorFeedTableViewController.swift */,
-				AC93E77420426E55007E052B /* StudentFeedTableViewController.swift */,
-				AC93E77620426E69007E052B /* AdministratorRequestTableViewController.swift */,
 				AC93E7782042771D007E052B /* AdministratorFeedDescriptionViewController.swift */,
+				AC93E77620426E69007E052B /* AdministratorRequestTableViewController.swift */,
+				AC93E77C20427D01007E052B /* AdministratorRequestDescriptionViewController.swift */,
+				AC5CAA63204251FD00D47DCE /* AdministratorReportViewController.swift */,
+				AC5CAA5F2042496B00D47DCE /* AdministratorSettingsViewController.swift */,
+				AC5CAA5D204245B100D47DCE /* StudentLoginViewController.swift */,
+				AC93E77420426E55007E052B /* StudentFeedTableViewController.swift */,
 				AC93E77A20427920007E052B /* StudentFeedDescriptionViewController.swift */,
+				AC5CAA65204252DB00D47DCE /* StudentReportViewController.swift */,
+				AC5CAA612042497600D47DCE /* StudentSettingsViewController.swift */,
+				4941828F2042675900219251 /* AFLogin.swift */,
 			);
 			path = EduSafeV2;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				AC5CAA5E204245B100D47DCE /* StudentLoginViewController.swift in Sources */,
 				AC93E77720426E69007E052B /* AdministratorRequestTableViewController.swift in Sources */,
 				AC5CAA5C2042459F00D47DCE /* AdministratorLoginViewController.swift in Sources */,
+				AC93E77D20427D01007E052B /* AdministratorRequestDescriptionViewController.swift in Sources */,
 				AC5CAA30204234ED00D47DCE /* ViewController.swift in Sources */,
 				AC5CAA602042496B00D47DCE /* AdministratorSettingsViewController.swift in Sources */,
 				AC5CAA66204252DB00D47DCE /* StudentReportViewController.swift in Sources */,

@@ -413,6 +413,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="recents" id="gcV-np-ewg"/>
+                    <connections>
+                        <segue destination="0yM-AK-Iuu" kind="show" identifier="segue" id="eoK-yh-hK5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41g-Wt-KIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -613,16 +616,16 @@
             </objects>
             <point key="canvasLocation" x="2937" y="403"/>
         </scene>
-        <!--View Controller-->
+        <!--Administrator Request Description View Controller-->
         <scene sceneID="jWT-BN-WPh">
             <objects>
-                <viewController id="0yM-AK-Iuu" sceneMemberID="viewController">
+                <viewController id="0yM-AK-Iuu" customClass="AdministratorRequestDescriptionViewController" customModule="EduSafeV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tY3-gU-5VA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tGU-K2-50j">
-                                <rect key="frame" x="16" y="87" width="343" height="444"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tGU-K2-50j">
+                                <rect key="frame" x="16" y="87" width="343" height="484"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -631,7 +634,21 @@
                                 <rect key="frame" x="16" y="20" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <action selector="backButtonPressed:" destination="0yM-AK-Iuu" eventType="touchUpInside" id="Hyy-yP-adX"/>
+                                    <action selector="backButtonPressed:" destination="0yM-AK-Iuu" eventType="touchUpInside" id="1T8-oz-Nnl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8V9-0D-VNu">
+                                <rect key="frame" x="160" y="617" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismissButtonPressed:" destination="0yM-AK-Iuu" eventType="touchUpInside" id="dYb-V1-Szy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AY-vK-8gd">
+                                <rect key="frame" x="125" y="579" width="126" height="30"/>
+                                <state key="normal" title="Send Notifications"/>
+                                <connections>
+                                    <action selector="sendNotificationsButtonPressed:" destination="0yM-AK-Iuu" eventType="touchUpInside" id="6cq-eC-uGV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytP-KB-Equ">
@@ -643,10 +660,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="8V9-0D-VNu" firstAttribute="top" secondItem="8AY-vK-8gd" secondAttribute="bottom" constant="8" id="5hG-iR-uDi"/>
                             <constraint firstItem="hjg-Cg-yrg" firstAttribute="leading" secondItem="4bL-1N-3qm" secondAttribute="leading" constant="16" id="Ael-uy-b1k"/>
                             <constraint firstItem="tGU-K2-50j" firstAttribute="leading" secondItem="4bL-1N-3qm" secondAttribute="leading" constant="16" id="FwG-Tb-nbg"/>
+                            <constraint firstItem="8AY-vK-8gd" firstAttribute="top" secondItem="tGU-K2-50j" secondAttribute="bottom" constant="8" id="NzA-E1-xGP"/>
+                            <constraint firstItem="4bL-1N-3qm" firstAttribute="bottom" secondItem="8V9-0D-VNu" secondAttribute="bottom" constant="20" id="SbN-JR-ANw"/>
                             <constraint firstItem="tGU-K2-50j" firstAttribute="top" secondItem="ytP-KB-Equ" secondAttribute="bottom" constant="8" id="W2K-Ey-kLZ"/>
-                            <constraint firstItem="4bL-1N-3qm" firstAttribute="bottom" secondItem="tGU-K2-50j" secondAttribute="bottom" constant="20" id="ZaE-g6-Sru"/>
+                            <constraint firstItem="8V9-0D-VNu" firstAttribute="centerX" secondItem="4bL-1N-3qm" secondAttribute="centerX" id="fcB-0D-ISs"/>
+                            <constraint firstItem="8AY-vK-8gd" firstAttribute="centerX" secondItem="4bL-1N-3qm" secondAttribute="centerX" id="h8m-Hj-VhG"/>
                             <constraint firstItem="ytP-KB-Equ" firstAttribute="top" secondItem="hjg-Cg-yrg" secondAttribute="bottom" constant="8" id="htR-uM-fSy"/>
                             <constraint firstItem="ytP-KB-Equ" firstAttribute="leading" secondItem="4bL-1N-3qm" secondAttribute="leading" constant="16" id="p1R-D9-BPZ"/>
                             <constraint firstItem="hjg-Cg-yrg" firstAttribute="top" secondItem="4bL-1N-3qm" secondAttribute="top" id="te9-kX-F5s"/>
@@ -655,7 +676,7 @@
                         <viewLayoutGuide key="safeArea" id="4bL-1N-3qm"/>
                     </view>
                     <connections>
-                        <outlet property="descriptionTextField" destination="tGU-K2-50j" id="kQa-Si-nwX"/>
+                        <outlet property="descriptionTextField" destination="tGU-K2-50j" id="4Hd-O1-9ia"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRA-PD-rne" userLabel="First Responder" sceneMemberID="firstResponder"/>
