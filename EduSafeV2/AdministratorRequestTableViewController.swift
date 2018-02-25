@@ -13,7 +13,6 @@ var myIndex2 = 0
 var requests: [FeedObjects] = requestFeed
 
 class AdministratorRequestTableViewController: UITableViewController {
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return requests.count

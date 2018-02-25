@@ -214,6 +214,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="36S-AP-mif" firstAttribute="top" secondItem="1YW-LT-fye" secondAttribute="top" id="86J-60-MQW"/>
                             <constraint firstItem="36S-AP-mif" firstAttribute="leading" secondItem="1YW-LT-fye" secondAttribute="leading" constant="16" id="HdL-KV-FR2"/>
                             <constraint firstItem="l7R-0e-GYF" firstAttribute="centerX" secondItem="iFP-nS-wLi" secondAttribute="centerX" constant="45" id="JWH-zK-Cyy"/>
                             <constraint firstItem="JZZ-Oh-rKs" firstAttribute="width" secondItem="iFP-nS-wLi" secondAttribute="width" multiplier="1:2" id="K4F-el-bBi"/>
@@ -224,7 +225,6 @@
                             <constraint firstItem="EXa-j2-GNh" firstAttribute="centerX" secondItem="iFP-nS-wLi" secondAttribute="centerX" constant="45.5" id="aUm-7n-NWS"/>
                             <constraint firstItem="EXa-j2-GNh" firstAttribute="width" secondItem="iFP-nS-wLi" secondAttribute="height" multiplier="1:4" id="h6F-B8-dl6"/>
                             <constraint firstItem="e12-1X-jAJ" firstAttribute="centerY" secondItem="iFP-nS-wLi" secondAttribute="centerY" constant="19" id="hGr-ox-5dT"/>
-                            <constraint firstItem="36S-AP-mif" firstAttribute="top" secondItem="1YW-LT-fye" secondAttribute="top" id="hy1-aB-iTT"/>
                             <constraint firstItem="EXa-j2-GNh" firstAttribute="centerY" secondItem="iFP-nS-wLi" secondAttribute="centerY" constant="-19.5" id="nbp-Xl-cLv"/>
                             <constraint firstItem="EXa-j2-GNh" firstAttribute="leading" secondItem="KWU-Sx-DZf" secondAttribute="trailing" constant="8.5" id="qsb-Df-lyi"/>
                             <constraint firstItem="l7R-0e-GYF" firstAttribute="width" secondItem="iFP-nS-wLi" secondAttribute="height" multiplier="1:4" id="uTJ-cu-aZD"/>
