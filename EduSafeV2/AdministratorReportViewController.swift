@@ -15,6 +15,7 @@ class AdministratorReportViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        descriptionTextField.layer.borderWidth = 1
     }
 
     override func didReceiveMemoryWarning() {
