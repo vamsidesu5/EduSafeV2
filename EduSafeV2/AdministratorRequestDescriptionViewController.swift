@@ -28,10 +28,8 @@ class AdministratorRequestDescriptionViewController: UIViewController {
     @IBAction func dismissButtonPressed(_ sender: Any) {
         let methods = AFMethods()
         methods.approveMessage(message_id: requests[myIndex2].getID(), completion: { status in
-            if status == "Approved"{
-                // Send notification that it worked
-            }else{
-                // Send notification that it failed
+            if status != "Approved"{
+                // Send notification that it didn't work
             }
                 requestFeed.remove(at: myIndex2)
                 methods.createFeed()
