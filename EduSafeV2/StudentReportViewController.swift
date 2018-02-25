@@ -14,7 +14,7 @@ class StudentReportViewController: UIViewController {
     @IBOutlet weak var descriptionTextField: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        descriptionTextField.layer.borderWidth = 1
 
         // Do any additional setup after loading the view.
     }
