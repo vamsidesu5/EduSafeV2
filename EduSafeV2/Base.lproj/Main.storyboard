@@ -135,8 +135,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36S-AP-mif">
-                                <rect key="frame" x="16" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                                <rect key="frame" x="16" y="20" width="94" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="NcR-GN-2gw" eventType="touchUpInside" id="lGP-XK-nRI"/>
                                 </connections>
@@ -158,6 +163,7 @@
                             <constraint firstItem="36S-AP-mif" firstAttribute="leading" secondItem="1YW-LT-fye" secondAttribute="leading" constant="16" id="HdL-KV-FR2"/>
                             <constraint firstItem="l7R-0e-GYF" firstAttribute="centerX" secondItem="iFP-nS-wLi" secondAttribute="centerX" constant="45" id="JWH-zK-Cyy"/>
                             <constraint firstItem="JZZ-Oh-rKs" firstAttribute="width" secondItem="iFP-nS-wLi" secondAttribute="width" multiplier="1:2" id="K4F-el-bBi"/>
+                            <constraint firstItem="36S-AP-mif" firstAttribute="width" secondItem="iFP-nS-wLi" secondAttribute="width" multiplier="1:4" id="Lr2-OI-jho"/>
                             <constraint firstItem="KWU-Sx-DZf" firstAttribute="centerY" secondItem="iFP-nS-wLi" secondAttribute="centerY" constant="-19" id="Seg-Bo-Q4F"/>
                             <constraint firstItem="l7R-0e-GYF" firstAttribute="leading" secondItem="e12-1X-jAJ" secondAttribute="trailing" constant="8" id="W0L-Uc-smI"/>
                             <constraint firstItem="JZZ-Oh-rKs" firstAttribute="centerX" secondItem="iFP-nS-wLi" secondAttribute="centerX" id="YWI-Qs-1A7"/>
@@ -531,8 +537,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybo-FO-pUc">
-                                <rect key="frame" x="16" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                                <rect key="frame" x="16" y="20" width="94" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="YT0-hJ-4r6" eventType="touchUpInside" id="tFI-xq-doa"/>
                                 </connections>
@@ -552,6 +562,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Ybo-FO-pUc" firstAttribute="width" secondItem="9Vd-ZJ-G5R" secondAttribute="width" multiplier="1:4" id="7Vb-S4-TuE"/>
                             <constraint firstItem="Ybo-FO-pUc" firstAttribute="top" secondItem="0Yu-3u-mfG" secondAttribute="top" id="7m5-r4-rMC"/>
                             <constraint firstItem="BDW-3m-yhc" firstAttribute="width" secondItem="9Vd-ZJ-G5R" secondAttribute="width" multiplier="1:2" id="AG3-uc-bo4"/>
                             <constraint firstItem="X0c-jY-HVm" firstAttribute="centerY" secondItem="9Vd-ZJ-G5R" secondAttribute="centerY" constant="19" id="Ax4-Pg-hs1"/>
