@@ -87,7 +87,7 @@ struct AFMethods{
 
     }
 
-    func displayFeed(){
+    func displayFeedAdmin(){
 
 
 
