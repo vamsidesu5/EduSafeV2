@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26F292C56F9445B513C877E1 /* Pods_EduSafeV2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4D37C7BF154AEA7FCBBA6D /* Pods_EduSafeV2UITests.framework */; };
+		3B10D6D1E510147B494214FE /* Pods_EduSafeV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773802697A9794C56C09D7F3 /* Pods_EduSafeV2.framework */; };
+		3CF6A06498DC7C43401A6DF1 /* Pods_EduSafeV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BE064B652DC16925EA41BB /* Pods_EduSafeV2Tests.framework */; };
+		494182902042675900219251 /* AFLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941828F2042675900219251 /* AFLogin.swift */; };
 		AC5CAA2E204234ED00D47DCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5CAA2D204234ED00D47DCE /* AppDelegate.swift */; };
 		AC5CAA30204234ED00D47DCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5CAA2F204234ED00D47DCE /* ViewController.swift */; };
 		AC5CAA33204234ED00D47DCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5CAA31204234ED00D47DCE /* Main.storyboard */; };
@@ -40,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E4D37C7BF154AEA7FCBBA6D /* Pods_EduSafeV2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EduSafeV2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C09EDAB0CA52BFF5460078 /* Pods-EduSafeV2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2UITests/Pods-EduSafeV2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4941828F2042675900219251 /* AFLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLogin.swift; sourceTree = "<group>"; };
+		68D5C8DFEB530F9803191288 /* Pods-EduSafeV2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2Tests/Pods-EduSafeV2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		773802697A9794C56C09D7F3 /* Pods_EduSafeV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EduSafeV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DF35F78861D3FC9ABB72E86 /* Pods-EduSafeV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2/Pods-EduSafeV2.release.xcconfig"; sourceTree = "<group>"; };
+		9E564F0B4A66D79AF504FE17 /* Pods-EduSafeV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2/Pods-EduSafeV2.debug.xcconfig"; sourceTree = "<group>"; };
 		AC5CAA2A204234ED00D47DCE /* EduSafeV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduSafeV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5CAA2D204234ED00D47DCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC5CAA2F204234ED00D47DCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +70,9 @@
 		AC5CAA612042497600D47DCE /* StudentSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSettingsViewController.swift; sourceTree = "<group>"; };
 		AC5CAA63204251FD00D47DCE /* AdministratorReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministratorReportViewController.swift; sourceTree = "<group>"; };
 		AC5CAA65204252DB00D47DCE /* StudentReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentReportViewController.swift; sourceTree = "<group>"; };
+		BCF435AE121733063A667160 /* Pods-EduSafeV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2Tests/Pods-EduSafeV2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C6BE064B652DC16925EA41BB /* Pods_EduSafeV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EduSafeV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6B62008A5BE2A26DC8CE09 /* Pods-EduSafeV2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2UITests/Pods-EduSafeV2UITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B10D6D1E510147B494214FE /* Pods_EduSafeV2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CF6A06498DC7C43401A6DF1 /* Pods_EduSafeV2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F292C56F9445B513C877E1 /* Pods_EduSafeV2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3111B26329690D5927C321ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				773802697A9794C56C09D7F3 /* Pods_EduSafeV2.framework */,
+				C6BE064B652DC16925EA41BB /* Pods_EduSafeV2Tests.framework */,
+				0E4D37C7BF154AEA7FCBBA6D /* Pods_EduSafeV2UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5CA43AEA6C850466992F779 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E564F0B4A66D79AF504FE17 /* Pods-EduSafeV2.debug.xcconfig */,
+				7DF35F78861D3FC9ABB72E86 /* Pods-EduSafeV2.release.xcconfig */,
+				68D5C8DFEB530F9803191288 /* Pods-EduSafeV2Tests.debug.xcconfig */,
+				BCF435AE121733063A667160 /* Pods-EduSafeV2Tests.release.xcconfig */,
+				24C09EDAB0CA52BFF5460078 /* Pods-EduSafeV2UITests.debug.xcconfig */,
+				CF6B62008A5BE2A26DC8CE09 /* Pods-EduSafeV2UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AC5CAA21204234ED00D47DCE = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +133,8 @@
 				AC5CAA41204234EE00D47DCE /* EduSafeV2Tests */,
 				AC5CAA4C204234EE00D47DCE /* EduSafeV2UITests */,
 				AC5CAA2B204234ED00D47DCE /* Products */,
+				A5CA43AEA6C850466992F779 /* Pods */,
+				3111B26329690D5927C321ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +163,7 @@
 				AC5CAA5D204245B100D47DCE /* StudentLoginViewController.swift */,
 				AC5CAA63204251FD00D47DCE /* AdministratorReportViewController.swift */,
 				AC5CAA65204252DB00D47DCE /* StudentReportViewController.swift */,
+				4941828F2042675900219251 /* AFLogin.swift */,
 			);
 			path = EduSafeV2;
 			sourceTree = "<group>";
@@ -150,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC5CAA52204234EE00D47DCE /* Build configuration list for PBXNativeTarget "EduSafeV2" */;
 			buildPhases = (
+				9864BE7ADD21487120F3A4B3 /* [CP] Check Pods Manifest.lock */,
 				AC5CAA26204234ED00D47DCE /* Sources */,
 				AC5CAA27204234ED00D47DCE /* Frameworks */,
 				AC5CAA28204234ED00D47DCE /* Resources */,
+				24B20352B4ACE02E5B19022E /* [CP] Embed Pods Frameworks */,
+				E92AAB5C18AA6F129AA0E88A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC5CAA55204234EE00D47DCE /* Build configuration list for PBXNativeTarget "EduSafeV2Tests" */;
 			buildPhases = (
+				B3E865CC87AF3D7AF1EFADBB /* [CP] Check Pods Manifest.lock */,
 				AC5CAA3A204234EE00D47DCE /* Sources */,
 				AC5CAA3B204234EE00D47DCE /* Frameworks */,
 				AC5CAA3C204234EE00D47DCE /* Resources */,
+				6D29A54503197DFBDD55F106 /* [CP] Embed Pods Frameworks */,
+				2F4211948A7ADDD84EB66AF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC5CAA58204234EE00D47DCE /* Build configuration list for PBXNativeTarget "EduSafeV2UITests" */;
 			buildPhases = (
+				B514C01E47F56CA6BEAF2206 /* [CP] Check Pods Manifest.lock */,
 				AC5CAA45204234EE00D47DCE /* Sources */,
 				AC5CAA46204234EE00D47DCE /* Frameworks */,
 				AC5CAA47204234EE00D47DCE /* Resources */,
+				56C3E161936165334C6C2BAF /* [CP] Embed Pods Frameworks */,
+				9B04D278E42AAAC0CB159953 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +324,162 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24B20352B4ACE02E5B19022E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EduSafeV2/Pods-EduSafeV2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EduSafeV2/Pods-EduSafeV2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F4211948A7ADDD84EB66AF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EduSafeV2Tests/Pods-EduSafeV2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56C3E161936165334C6C2BAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EduSafeV2UITests/Pods-EduSafeV2UITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EduSafeV2UITests/Pods-EduSafeV2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D29A54503197DFBDD55F106 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EduSafeV2Tests/Pods-EduSafeV2Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EduSafeV2Tests/Pods-EduSafeV2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9864BE7ADD21487120F3A4B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EduSafeV2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B04D278E42AAAC0CB159953 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EduSafeV2UITests/Pods-EduSafeV2UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E865CC87AF3D7AF1EFADBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EduSafeV2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B514C01E47F56CA6BEAF2206 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EduSafeV2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E92AAB5C18AA6F129AA0E88A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EduSafeV2/Pods-EduSafeV2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC5CAA26204234ED00D47DCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -282,6 +490,7 @@
 				AC5CAA30204234ED00D47DCE /* ViewController.swift in Sources */,
 				AC5CAA602042496B00D47DCE /* AdministratorSettingsViewController.swift in Sources */,
 				AC5CAA66204252DB00D47DCE /* StudentReportViewController.swift in Sources */,
+				494182902042675900219251 /* AFLogin.swift in Sources */,
 				AC5CAA64204251FD00D47DCE /* AdministratorReportViewController.swift in Sources */,
 				AC5CAA2E204234ED00D47DCE /* AppDelegate.swift in Sources */,
 				AC5CAA622042497600D47DCE /* StudentSettingsViewController.swift in Sources */,
@@ -448,6 +657,7 @@
 		};
 		AC5CAA53204234EE00D47DCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E564F0B4A66D79AF504FE17 /* Pods-EduSafeV2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +672,7 @@
 		};
 		AC5CAA54204234EE00D47DCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF35F78861D3FC9ABB72E86 /* Pods-EduSafeV2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +687,7 @@
 		};
 		AC5CAA56204234EE00D47DCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D5C8DFEB530F9803191288 /* Pods-EduSafeV2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +704,7 @@
 		};
 		AC5CAA57204234EE00D47DCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF435AE121733063A667160 /* Pods-EduSafeV2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +721,7 @@
 		};
 		AC5CAA59204234EE00D47DCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C09EDAB0CA52BFF5460078 /* Pods-EduSafeV2UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +737,7 @@
 		};
 		AC5CAA5A204234EE00D47DCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF6B62008A5BE2A26DC8CE09 /* Pods-EduSafeV2UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

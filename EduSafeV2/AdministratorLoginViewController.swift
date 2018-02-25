@@ -25,8 +25,10 @@ class AdministratorLoginViewController: UIViewController {
     
     @IBAction func loginButtonPressed(_ sender: Any) {
         let user = userTextField.text;
-        let pass = passTextField.text;
+        let password = passTextField.text;
         //send the user and the pass to the server
+
+
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
