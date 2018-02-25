@@ -53,13 +53,13 @@ class StudentReportViewController: UIViewController {
         {
         case 0:
             urgency = 1
-            print(urgency)
+
         case 1:
             urgency = 2
-            print(urgency)
+
         case 2:
             urgency = 3
-            print(urgency)
+
         default:
             break
         }

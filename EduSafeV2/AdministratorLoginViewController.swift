@@ -32,6 +32,8 @@ class AdministratorLoginViewController: UIViewController {
             let methods = AFMethods()
             methods.loginAdmin(name: name!, password: password!, completion: { status in
                 if status == "Login Success"{
+                    methods.createFeed()
+
                     self.performSegue(withIdentifier: "segue", sender: self)
 
                 }else{

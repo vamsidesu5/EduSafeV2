@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FeedObjects: Decodable{
+struct FeedObjects: Codable{
 
     private let approved: Bool
     private let content: String

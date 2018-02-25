@@ -32,7 +32,7 @@ struct AFMethods{
                 }
 
                 status = status.replacingOccurrences(of: "\"", with: "")
-                print(status)
+
                 completion(status)
         }
     }
@@ -89,10 +89,33 @@ struct AFMethods{
 
     func createFeed(){
 
+        let updatedEP = endpoint + "/users/seeMessages/"
+
+        guard let url = URL(string: updatedEP) else {
+            print("Could not get URL")
+            return
+        }
+
+
+        URLSession.shared.dataTask(with: url){
+            (data, response, err) in
+            guard let data = data else {return}
+            do {
+                let jsonObjects = try JSONDecoder().decode([FeedObjects].self, from: data)
+                for message in jsonObjects{
+                    requestFeed.append(message)
+                    print(message.getContent())
+                }
+            } catch let jsonErr{
+                print("Error serializing JSON", jsonErr)
+            }
+        }.resume()
 
     }
 
     func approveMessage(username: String, password: String){
+
+
 
     }
 
