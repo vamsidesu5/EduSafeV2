@@ -29,9 +29,7 @@ class AdministratorRequestDescriptionViewController: UIViewController {
         let methods = AFMethods()
         methods.approveMessage(message_id: requests[myIndex2].getID(), completion: { status in
             if status == "Approved"{
-                // Send notification that it worked
             }else{
-                // Send notification that it failed
             }
                 requestFeed.remove(at: myIndex2)
                 methods.createFeed()
