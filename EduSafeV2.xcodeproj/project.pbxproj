@@ -27,6 +27,8 @@
 		AC93E77320426E41007E052B /* AdministratorFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93E77220426E41007E052B /* AdministratorFeedTableViewController.swift */; };
 		AC93E77520426E55007E052B /* StudentFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93E77420426E55007E052B /* StudentFeedTableViewController.swift */; };
 		AC93E77720426E69007E052B /* AdministratorRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93E77620426E69007E052B /* AdministratorRequestTableViewController.swift */; };
+		AC93E7792042771D007E052B /* AdministratorFeedDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93E7782042771D007E052B /* AdministratorFeedDescriptionViewController.swift */; };
+		AC93E77B20427920007E052B /* StudentFeedDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93E77A20427920007E052B /* StudentFeedDescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		AC93E77220426E41007E052B /* AdministratorFeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministratorFeedTableViewController.swift; sourceTree = "<group>"; };
 		AC93E77420426E55007E052B /* StudentFeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFeedTableViewController.swift; sourceTree = "<group>"; };
 		AC93E77620426E69007E052B /* AdministratorRequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministratorRequestTableViewController.swift; sourceTree = "<group>"; };
+		AC93E7782042771D007E052B /* AdministratorFeedDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministratorFeedDescriptionViewController.swift; sourceTree = "<group>"; };
+		AC93E77A20427920007E052B /* StudentFeedDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFeedDescriptionViewController.swift; sourceTree = "<group>"; };
 		BCF435AE121733063A667160 /* Pods-EduSafeV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2Tests/Pods-EduSafeV2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C6BE064B652DC16925EA41BB /* Pods_EduSafeV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EduSafeV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6B62008A5BE2A26DC8CE09 /* Pods-EduSafeV2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2UITests/Pods-EduSafeV2UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				AC93E77220426E41007E052B /* AdministratorFeedTableViewController.swift */,
 				AC93E77420426E55007E052B /* StudentFeedTableViewController.swift */,
 				AC93E77620426E69007E052B /* AdministratorRequestTableViewController.swift */,
+				AC93E7782042771D007E052B /* AdministratorFeedDescriptionViewController.swift */,
+				AC93E77A20427920007E052B /* StudentFeedDescriptionViewController.swift */,
 			);
 			path = EduSafeV2;
 			sourceTree = "<group>";
@@ -503,8 +509,10 @@
 				494182902042675900219251 /* AFLogin.swift in Sources */,
 				AC5CAA64204251FD00D47DCE /* AdministratorReportViewController.swift in Sources */,
 				AC5CAA2E204234ED00D47DCE /* AppDelegate.swift in Sources */,
+				AC93E77B20427920007E052B /* StudentFeedDescriptionViewController.swift in Sources */,
 				AC93E77520426E55007E052B /* StudentFeedTableViewController.swift in Sources */,
 				AC5CAA622042497600D47DCE /* StudentSettingsViewController.swift in Sources */,
+				AC93E7792042771D007E052B /* AdministratorFeedDescriptionViewController.swift in Sources */,
 				AC93E77320426E41007E052B /* AdministratorFeedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
