@@ -28,8 +28,7 @@ class StudentLoginViewController: UIViewController {
         let password = passTextField.text;
 
         if name != nil && password != nil{
-            print(name!)
-            print(password!)
+
             let methods = AFMethods()
             methods.loginStudent(student_id: name!, password: password!, completion: { status in
                 if status == "Login Success"{

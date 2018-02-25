@@ -61,23 +61,27 @@ struct AFMethods{
         }
     }
 
-    func postMessage(content: String, urgency: Int, completion: @escaping (Bool?) -> ()){
+    func postMessage(content: String, urgency: Int, completion: @escaping (String?) -> ()){
 
-        let messageInfo: [String: Any] = ["content": content, "urgency": urgency]
+        let messageInfo: [String: Any] = ["content": content, "urgent": urgency]
         let updatedEP = endpoint + "/message/postMessage/"
 
-        var success = false
+        var status: String = ""
 
         Alamofire.request(updatedEP, method: .post, parameters: messageInfo, encoding: JSONEncoding.default)
             .responseJSON { response in
 
-                guard response.result.error == nil else{
-                    print("There is an error")
-                    print(response.result.error!)
+                if let json = response.result.value{
+                    status = json as! String
+                } else {
+                    print("didn't get object from API")
+                    print("Error: \(response.result.error!)")
                     return
                 }
-                success = true
-                completion(success)
+
+                status = status.replacingOccurrences(of: "\"", with: "")
+
+                completion(status)
 
         }
 

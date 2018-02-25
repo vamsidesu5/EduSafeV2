@@ -31,12 +31,12 @@ class StudentReportViewController: UIViewController {
 
         if description != nil{
             let methods = AFMethods()
-            methods.postMessage(content: description!, urgency: urgency, completion: { success in
-                if success == true{
-                    print("Success")
+            methods.postMessage(content: description!, urgency: urgency, completion: { status in
+                if status == "Success"{
+                    print("Success") // Change this to a pop-up
 
                 }else{
-                    print("Failure")
+                    print("Failure") // ^^
                 }
 
             })
