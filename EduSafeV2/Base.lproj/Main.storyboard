@@ -722,7 +722,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tGU-K2-50j">
-                                <rect key="frame" x="16" y="89.5" width="343" height="481.5"/>
+                                <rect key="frame" x="16" y="89.5" width="343" height="469.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -738,15 +738,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8V9-0D-VNu">
-                                <rect key="frame" x="160" y="617" width="54" height="30"/>
-                                <state key="normal" title="Dismiss"/>
+                                <rect key="frame" x="93.5" y="611" width="187.5" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="dismissButtonPressed:" destination="0yM-AK-Iuu" eventType="touchUpInside" id="dYb-V1-Szy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AY-vK-8gd">
-                                <rect key="frame" x="125" y="579" width="126" height="30"/>
-                                <state key="normal" title="Send Notifications"/>
+                                <rect key="frame" x="94.5" y="567" width="187.5" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Send Notifications">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="sendNotificationsButtonPressed:" destination="0yM-AK-Iuu" eventType="touchUpInside" id="6cq-eC-uGV"/>
                                 </connections>
@@ -764,9 +772,11 @@
                             <constraint firstItem="hjg-Cg-yrg" firstAttribute="leading" secondItem="4bL-1N-3qm" secondAttribute="leading" constant="16" id="Ael-uy-b1k"/>
                             <constraint firstItem="tGU-K2-50j" firstAttribute="leading" secondItem="4bL-1N-3qm" secondAttribute="leading" constant="16" id="FwG-Tb-nbg"/>
                             <constraint firstItem="8AY-vK-8gd" firstAttribute="top" secondItem="tGU-K2-50j" secondAttribute="bottom" constant="8" id="NzA-E1-xGP"/>
+                            <constraint firstItem="8V9-0D-VNu" firstAttribute="width" secondItem="tY3-gU-5VA" secondAttribute="width" multiplier="1:2" id="OQT-L6-y80"/>
                             <constraint firstItem="4bL-1N-3qm" firstAttribute="bottom" secondItem="8V9-0D-VNu" secondAttribute="bottom" constant="20" id="SbN-JR-ANw"/>
                             <constraint firstItem="hjg-Cg-yrg" firstAttribute="width" secondItem="tY3-gU-5VA" secondAttribute="width" multiplier="1:4" id="UVq-aL-VD3"/>
                             <constraint firstItem="tGU-K2-50j" firstAttribute="top" secondItem="ytP-KB-Equ" secondAttribute="bottom" constant="8" id="W2K-Ey-kLZ"/>
+                            <constraint firstItem="8AY-vK-8gd" firstAttribute="width" secondItem="tY3-gU-5VA" secondAttribute="width" multiplier="1:2" id="bDl-4b-6eg"/>
                             <constraint firstItem="8V9-0D-VNu" firstAttribute="centerX" secondItem="4bL-1N-3qm" secondAttribute="centerX" id="fcB-0D-ISs"/>
                             <constraint firstItem="8AY-vK-8gd" firstAttribute="centerX" secondItem="4bL-1N-3qm" secondAttribute="centerX" id="h8m-Hj-VhG"/>
                             <constraint firstItem="ytP-KB-Equ" firstAttribute="top" secondItem="hjg-Cg-yrg" secondAttribute="bottom" constant="8" id="htR-uM-fSy"/>
