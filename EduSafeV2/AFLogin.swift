@@ -15,7 +15,7 @@ struct AFMethods{
 
     func loginStudent(student_id: String, password: String, completion: @escaping (String?) -> ()){
 
-        let loginInfo: [String: Any] = ["student-id": student_id, "password": password]
+        let loginInfo: [String: Any] = ["student_id": student_id, "password": password]
         let updatedEP = endpoint + "/users/loginStudent/"
 
         var status: String = ""
@@ -32,7 +32,7 @@ struct AFMethods{
                 }
 
                 status = status.replacingOccurrences(of: "\"", with: "")
-
+                print(status)
                 completion(status)
         }
     }
