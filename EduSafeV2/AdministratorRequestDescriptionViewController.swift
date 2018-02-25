@@ -28,8 +28,11 @@ class AdministratorRequestDescriptionViewController: UIViewController {
     @IBAction func dismissButtonPressed(_ sender: Any) {
         let methods = AFMethods()
         methods.approveMessage(message_id: requests[myIndex2].getID(), completion: { status in
-            if status == "Approved"{
-            }else{
+            if status != "Approved"{
+                let alert = UIAlertController(title: "Login Failed", message: "Bad username or password", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
             }
                 requestFeed.remove(at: myIndex2)
                 methods.createFeed()
