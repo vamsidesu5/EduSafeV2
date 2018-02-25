@@ -24,18 +24,19 @@ class StudentLoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
-        let id = userTextField.text;
+        let name = userTextField.text;
         let password = passTextField.text;
 
-        if id != nil && password != nil{
-
+        if name != nil && password != nil{
+            print(name!)
+            print(password!)
             let methods = AFMethods()
-            methods.loginStudent(student_id: id!, password: password!, completion: { status in
+            methods.loginStudent(student_id: name!, password: password!, completion: { status in
                 if status == "Login Success"{
-                    self.performSegue(withIdentifier: "segue", sender: self) //ZACH
+                    self.performSegue(withIdentifier: "segue", sender: self)
 
                 }else{
-                    print("Failure") //ZACH
+                    print("Failure")
                 }
             })
         }
