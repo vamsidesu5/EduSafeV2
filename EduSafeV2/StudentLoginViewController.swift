@@ -24,9 +24,22 @@ class StudentLoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
-        let user = userTextField.text;
-        let pass = passTextField.text;
-        //send user and pass to server
+        let id = userTextField.text;
+        let password = passTextField.text;
+
+        if id != nil && password != nil{
+
+            let methods = AFMethods()
+            methods.loginStudent(student_id: id!, password: password!, completion: { status in
+                if status == "Login Success"{
+                    self.performSegue(withIdentifier: "segue", sender: self) //ZACH
+
+                }else{
+                    print("Failure") //ZACH
+                }
+            })
+        }
+
     }
     @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil);

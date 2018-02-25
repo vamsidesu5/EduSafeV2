@@ -13,32 +13,28 @@ struct AFMethods{
 
     let endpoint = "http://2c3eb790.ngrok.io" // Change this to the url
 
-    func loginStudent(username: String, password: String) -> Bool{
+    func loginStudent(student_id: String, password: String, completion: @escaping (String?) -> ()){
 
-        let loginInfo: [String: Any] = ["username": username, "password": password]
-        let updatedEP = endpoint + "/user/loginStudent/"
+        let loginInfo: [String: Any] = ["student-id": student_id, "password": password]
+        let updatedEP = endpoint + "/users/loginStudent/"
 
         var status: String = ""
 
         Alamofire.request(updatedEP, method: .put, parameters: loginInfo, encoding: JSONEncoding.default)
-        .responseJSON { response in
-            guard response.result.error == nil else {
-                print("error")
-                print(response.result.error!)
-                return
-            }
-            guard let json = response.result.value as? String else {
-                print("didn't get object from API")
-                print("Error: \(response.result.error!)")
-                return
-            }
-            status = json
-        }
+            .responseString { response in
 
-        if status == "Login Success"{
-            return true
+                if let json = response.result.value{
+                    status = json
+                } else {
+                    print("didn't get object from API")
+                    print("Error: \(response.result.error!)")
+                    return
+                }
+
+                status = status.replacingOccurrences(of: "\"", with: "")
+
+                completion(status)
         }
-        return false
     }
 
     func loginAdmin(name: String, password: String, completion: @escaping (String?) -> ()){
