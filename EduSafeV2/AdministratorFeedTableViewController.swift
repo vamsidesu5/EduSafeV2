@@ -8,7 +8,7 @@
 
 import UIKit
 
-var descriptions = ["temp1", "temp2", "temp3"]
+var descriptions = ["Example Alert 1", "Example Alert 2", "Example Alert 3"]
 var myIndex = 0
 
 class AdministratorFeedTableViewController: UITableViewController {

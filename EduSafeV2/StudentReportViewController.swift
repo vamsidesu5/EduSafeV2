@@ -36,6 +36,7 @@ class StudentReportViewController: UIViewController {
                     let alert = UIAlertController(title: "Success", message: "Message has been sent", preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
+                    self.descriptionTextField.text = ""
 
                 }else{
                     let alert = UIAlertController(title: "Failure", message: "An error occured", preferredStyle: UIAlertControllerStyle.alert)
