@@ -10,6 +10,7 @@
 		26F292C56F9445B513C877E1 /* Pods_EduSafeV2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4D37C7BF154AEA7FCBBA6D /* Pods_EduSafeV2UITests.framework */; };
 		3B10D6D1E510147B494214FE /* Pods_EduSafeV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773802697A9794C56C09D7F3 /* Pods_EduSafeV2.framework */; };
 		3CF6A06498DC7C43401A6DF1 /* Pods_EduSafeV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BE064B652DC16925EA41BB /* Pods_EduSafeV2Tests.framework */; };
+		49376F7320429D7100529CBD /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49376F7220429D7100529CBD /* Feed.swift */; };
 		494182902042675900219251 /* AFLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941828F2042675900219251 /* AFLogin.swift */; };
 		AC5CAA2E204234ED00D47DCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5CAA2D204234ED00D47DCE /* AppDelegate.swift */; };
 		AC5CAA30204234ED00D47DCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5CAA2F204234ED00D47DCE /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		0E4D37C7BF154AEA7FCBBA6D /* Pods_EduSafeV2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EduSafeV2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C09EDAB0CA52BFF5460078 /* Pods-EduSafeV2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2UITests/Pods-EduSafeV2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49376F7220429D7100529CBD /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		4941828F2042675900219251 /* AFLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLogin.swift; sourceTree = "<group>"; };
 		68D5C8DFEB530F9803191288 /* Pods-EduSafeV2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduSafeV2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EduSafeV2Tests/Pods-EduSafeV2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		773802697A9794C56C09D7F3 /* Pods_EduSafeV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EduSafeV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +182,7 @@
 				AC93E77420426E55007E052B /* StudentFeedTableViewController.swift */,
 				AC93E77A20427920007E052B /* StudentFeedDescriptionViewController.swift */,
 				AC5CAA65204252DB00D47DCE /* StudentReportViewController.swift */,
+				49376F7220429D7100529CBD /* Feed.swift */,
 				AC5CAA612042497600D47DCE /* StudentSettingsViewController.swift */,
 				4941828F2042675900219251 /* AFLogin.swift */,
 			);
@@ -512,6 +515,7 @@
 				AC5CAA66204252DB00D47DCE /* StudentReportViewController.swift in Sources */,
 				494182902042675900219251 /* AFLogin.swift in Sources */,
 				AC5CAA64204251FD00D47DCE /* AdministratorReportViewController.swift in Sources */,
+				49376F7320429D7100529CBD /* Feed.swift in Sources */,
 				AC5CAA2E204234ED00D47DCE /* AppDelegate.swift in Sources */,
 				AC93E77B20427920007E052B /* StudentFeedDescriptionViewController.swift in Sources */,
 				AC93E77520426E55007E052B /* StudentFeedTableViewController.swift in Sources */,
