@@ -19,7 +19,7 @@
 		AC5CAA602042496B00D47DCE /* AdministratorSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5CAA5F2042496B00D47DCE /* AdministratorSettingsViewController.swift */; };
 		AC5CAA622042497600D47DCE /* StudentSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5CAA612042497600D47DCE /* StudentSettingsViewController.swift */; };
 		AC5CAA64204251FD00D47DCE /* AdministratorReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5CAA63204251FD00D47DCE /* AdministratorReportViewController.swift */; };
-		AC5CAA66204252DB00D47DCE /* StudentSendReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5CAA65204252DB00D47DCE /* StudentSendReportViewController.swift */; };
+		AC5CAA66204252DB00D47DCE /* StudentReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5CAA65204252DB00D47DCE /* StudentReportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		AC5CAA5F2042496B00D47DCE /* AdministratorSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministratorSettingsViewController.swift; sourceTree = "<group>"; };
 		AC5CAA612042497600D47DCE /* StudentSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSettingsViewController.swift; sourceTree = "<group>"; };
 		AC5CAA63204251FD00D47DCE /* AdministratorReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdministratorReportViewController.swift; sourceTree = "<group>"; };
-		AC5CAA65204252DB00D47DCE /* StudentSendReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSendReportViewController.swift; sourceTree = "<group>"; };
+		AC5CAA65204252DB00D47DCE /* StudentReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentReportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 				AC5CAA5B2042459F00D47DCE /* AdministratorLoginViewController.swift */,
 				AC5CAA5D204245B100D47DCE /* StudentLoginViewController.swift */,
 				AC5CAA63204251FD00D47DCE /* AdministratorReportViewController.swift */,
-				AC5CAA65204252DB00D47DCE /* StudentSendReportViewController.swift */,
+				AC5CAA65204252DB00D47DCE /* StudentReportViewController.swift */,
 			);
 			path = EduSafeV2;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 				AC5CAA5C2042459F00D47DCE /* AdministratorLoginViewController.swift in Sources */,
 				AC5CAA30204234ED00D47DCE /* ViewController.swift in Sources */,
 				AC5CAA602042496B00D47DCE /* AdministratorSettingsViewController.swift in Sources */,
-				AC5CAA66204252DB00D47DCE /* StudentSendReportViewController.swift in Sources */,
+				AC5CAA66204252DB00D47DCE /* StudentReportViewController.swift in Sources */,
 				AC5CAA64204251FD00D47DCE /* AdministratorReportViewController.swift in Sources */,
 				AC5CAA2E204234ED00D47DCE /* AppDelegate.swift in Sources */,
 				AC5CAA622042497600D47DCE /* StudentSettingsViewController.swift in Sources */,

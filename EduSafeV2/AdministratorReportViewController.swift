@@ -24,10 +24,11 @@ class AdministratorReportViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func sendNotificationsButtonPressed(_ sender: Any) {
-        
+        //send notification to all people
     }
     @IBAction func markReadButtonPressed(_ sender: Any) {
         let description = descriptionTextField.text;
+        //send the description and the urgency to the server
     }
     @IBAction func changedSegmentedControl(_ sender: Any) {
         switch segmentedControl.selectedSegmentIndex

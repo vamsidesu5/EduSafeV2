@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StudentSendReportViewController: UIViewController {
+class StudentReportViewController: UIViewController {
     var urgency = 1;
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var descriptionTextField: UITextView!
@@ -26,6 +26,7 @@ class StudentSendReportViewController: UIViewController {
     
     @IBAction func sendAlertButtonPressed(_ sender: Any) {
         let description = descriptionTextField.text;
+        // send the description and the urgency to the server
     }
     
     @IBAction func changedSegmentedControl(_ sender: Any)

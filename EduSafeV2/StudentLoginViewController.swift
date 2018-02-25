@@ -26,6 +26,7 @@ class StudentLoginViewController: UIViewController {
     @IBAction func loginButtonPressed(_ sender: Any) {
         let user = userTextField.text;
         let pass = passTextField.text;
+        //send user and pass to server
     }
     @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil);
