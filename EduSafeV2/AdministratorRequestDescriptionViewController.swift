@@ -29,7 +29,10 @@ class AdministratorRequestDescriptionViewController: UIViewController {
         let methods = AFMethods()
         methods.approveMessage(message_id: requests[myIndex2].getID(), completion: { status in
             if status != "Approved"{
-                // Send notification that it didn't work
+                let alert = UIAlertController(title: "Login Failed", message: "Bad username or password", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
             }
                 requestFeed.remove(at: myIndex2)
                 methods.createFeed()
