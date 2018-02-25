@@ -13,7 +13,8 @@ class AdministratorRequestDescriptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        descriptionTextField.text = requests[myIndex2]
+        //descriptionTextField.text = requests[myIndex2]
+        // Fix later
     }
 
     override func didReceiveMemoryWarning() {

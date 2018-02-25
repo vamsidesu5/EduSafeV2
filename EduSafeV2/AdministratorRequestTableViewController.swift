@@ -8,8 +8,9 @@
 
 import UIKit
 
-var requests = ["request1","request2","request3"]
+
 var myIndex2 = 0
+var requests: [FeedObjects] = requestFeed
 
 class AdministratorRequestTableViewController: UITableViewController {
     
@@ -21,7 +22,7 @@ class AdministratorRequestTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         // Configure the cell...
-        cell.textLabel?.text = requests[indexPath.row]
+        cell.textLabel?.text = requests[indexPath.row].getContent()
         
         return cell
     }
