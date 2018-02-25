@@ -61,10 +61,12 @@ struct AFMethods{
         }
     }
 
-    func postMessage(content: String, urgency: Int){
+    func postMessage(content: String, urgency: Int, completion: @escaping (Bool?) -> ()){
 
         let messageInfo: [String: Any] = ["content": content, "urgency": urgency]
         let updatedEP = endpoint + "/message/postMessage/"
+
+        var success = false
 
         Alamofire.request(updatedEP, method: .post, parameters: messageInfo, encoding: JSONEncoding.default)
             .responseJSON { response in
@@ -74,6 +76,8 @@ struct AFMethods{
                     print(response.result.error!)
                     return
                 }
+                success = true
+                completion(success)
 
         }
 
