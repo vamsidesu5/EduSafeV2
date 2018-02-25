@@ -32,7 +32,7 @@ struct AFMethods{
                 }
 
                 status = status.replacingOccurrences(of: "\"", with: "")
-
+                print(status)
                 completion(status)
         }
     }
