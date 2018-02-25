@@ -165,8 +165,8 @@
 			children = (
 				AC5CAA2D204234ED00D47DCE /* AppDelegate.swift */,
 				AC5CAA31204234ED00D47DCE /* Main.storyboard */,
-				AC5CAA34204234ED00D47DCE /* Assets.xcassets */,
 				AC5CAA36204234ED00D47DCE /* LaunchScreen.storyboard */,
+				AC5CAA34204234ED00D47DCE /* Assets.xcassets */,
 				AC5CAA39204234ED00D47DCE /* Info.plist */,
 				AC5CAA2F204234ED00D47DCE /* ViewController.swift */,
 				AC5CAA5B2042459F00D47DCE /* AdministratorLoginViewController.swift */,
