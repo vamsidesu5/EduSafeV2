@@ -36,8 +36,6 @@ class AdministratorRequestDescriptionViewController: UIViewController {
                 requestFeed.remove(at: myIndex2)
                 methods.createFeed()
                 requests = requestFeed
-                viewToReload.setNeedsLayout()
-                viewToReload.layoutIfNeeded()
         })
         self.dismiss(animated: true, completion: nil)
     }
