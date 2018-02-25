@@ -328,6 +328,9 @@
                                     <segment title="Super Urgent"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changedSegmentedControl:" destination="9pg-NM-3Ik" eventType="valueChanged" id="vHX-qm-bag"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -33,10 +33,14 @@ class StudentReportViewController: UIViewController {
             let methods = AFMethods()
             methods.postMessage(content: description!, urgency: urgency, completion: { status in
                 if status == "Success"{
-                    print("Success") // Change this to a pop-up
+                    let alert = UIAlertController(title: "Success", message: "Message has been sent", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
 
                 }else{
-                    print("Failure") // ^^
+                    let alert = UIAlertController(title: "Failure", message: "An error occured", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
 
             })
@@ -44,16 +48,18 @@ class StudentReportViewController: UIViewController {
         }
     }
     
-    @IBAction func changedSegmentedControl(_ sender: Any)
-    {
+    @IBAction func changedSegmentedControl(_ sender: Any) {
         switch segmentedControl.selectedSegmentIndex
         {
         case 0:
             urgency = 1
+            print(urgency)
         case 1:
             urgency = 2
+            print(urgency)
         case 2:
             urgency = 3
+            print(urgency)
         default:
             break
         }
