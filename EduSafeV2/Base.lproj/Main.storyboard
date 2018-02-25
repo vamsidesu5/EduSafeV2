@@ -561,7 +561,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="YT0-hJ-4r6" eventType="touchUpInside" id="Q1E-qc-YNp"/>
-                                    <segue destination="Vn4-cN-F1r" kind="show" identifier="segue" id="PTZ-fd-9ZF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -589,6 +588,7 @@
                     <connections>
                         <outlet property="passTextField" destination="Wtw-Js-oU0" id="cns-Ls-3Cn"/>
                         <outlet property="userTextField" destination="Wtw-Js-oU0" id="Bok-Je-HXN"/>
+                        <segue destination="Vn4-cN-F1r" kind="show" identifier="segue" id="Fhk-C9-AI0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mnp-e0-obc" userLabel="First Responder" sceneMemberID="firstResponder"/>
