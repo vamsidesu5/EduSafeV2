@@ -35,7 +35,9 @@ class StudentLoginViewController: UIViewController {
                     self.performSegue(withIdentifier: "segue", sender: self) //ZACH
 
                 }else{
-                    print("Failure") //ZACH
+                    let alert = UIAlertController(title: "Login Failed", message: "Bad username or password", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
             })
         }
