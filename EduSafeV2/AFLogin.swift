@@ -90,6 +90,7 @@ struct AFMethods{
     func createFeed(){
 
         let updatedEP = endpoint + "/users/seeMessages/"
+        requestFeed = []
 
         guard let url = URL(string: updatedEP) else {
             print("Could not get URL")
@@ -110,8 +111,9 @@ struct AFMethods{
             }
         }.resume()
 
-    }
+        URLSession.shared.finishTasksAndInvalidate() // After tasks are completed, session ends
 
+    }
     func approveMessage(message_id:Int, completion: @escaping (String?) -> ()){
 
         let updatedEP = endpoint + "/users/approveMessage/"
