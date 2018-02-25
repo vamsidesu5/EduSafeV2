@@ -8,6 +8,9 @@
 
 import UIKit
 
+var description: Array
+var index = 1
+
 class AdministratorFeedTableViewController: UITableViewController {
 
     override func viewDidLoad() {
@@ -34,7 +37,7 @@ class AdministratorFeedTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return descriptions.count
     }
 
     /*
