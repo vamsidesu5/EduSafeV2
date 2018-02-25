@@ -15,6 +15,7 @@ class AdministratorRequestDescriptionViewController: UIViewController {
         super.viewDidLoad()
         //descriptionTextField.text = requests[myIndex2]
         // Fix later
+        descriptionTextField.text = requests[myIndex2].getContent()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,9 +26,11 @@ class AdministratorRequestDescriptionViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func dismissButtonPressed(_ sender: Any) {
+        //Remove request which is gonna look like requests[myIndex2].getID()
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func sendNotificationsButtonPressed(_ sender: Any) {
+        //Add request to descriptions
         self.dismiss(animated: true, completion: nil)
     }
 
