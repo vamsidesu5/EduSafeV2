@@ -24,10 +24,21 @@ class AdministratorLoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
-        let user = userTextField.text;
+        let name = userTextField.text;
         let password = passTextField.text;
-        //send the user and the pass to the server
 
+        if name != nil && password != nil{
+
+            let methods = AFMethods()
+            if methods.loginAdmin(name: name!, password: password!){
+
+
+            }else{
+
+                
+            }
+
+        }
 
     }
     
