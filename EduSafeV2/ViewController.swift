@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    static var endpoint: String = "Hello" // Put Url Here
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
