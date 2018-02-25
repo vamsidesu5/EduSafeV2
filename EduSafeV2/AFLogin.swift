@@ -112,9 +112,29 @@ struct AFMethods{
 
     }
 
-    func approveMessage(username: String, password: String){
+    func approveMessage(message_id:Int, completion: @escaping (String?) -> ()){
 
-        
+        let updatedEP = endpoint + "/users/approveMessage/"
+        let messageInfo: [String: Any] = ["message_id": message_id]
+
+        var status = ""
+
+        Alamofire.request(updatedEP, method: .post, parameters: messageInfo, encoding: JSONEncoding.default)
+            .responseJSON { response in
+
+                if let json = response.result.value{
+                    status = json as! String
+                } else {
+                    print("didn't get object from API")
+                    print("Error: \(response.result.error!)")
+                    return
+                }
+
+                status = status.replacingOccurrences(of: "\"", with: "")
+
+                completion(status)
+
+        }
 
     }
 

@@ -26,7 +26,15 @@ class AdministratorRequestDescriptionViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func dismissButtonPressed(_ sender: Any) {
-        //Remove request which is gonna look like requests[myIndex2].getID()
+        let methods = AFMethods()
+        methods.approveMessage(message_id: requests[myIndex2].getID(), completion: { status in
+            if status == "Approved"{
+                // Send notification that it worked
+            }else{
+                // Send notification that it failed
+            }
+
+        })
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func sendNotificationsButtonPressed(_ sender: Any) {
