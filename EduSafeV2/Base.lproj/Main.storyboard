@@ -198,8 +198,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ch-lv-WdD">
-                                <rect key="frame" x="163.5" y="318.5" width="48" height="30"/>
-                                <state key="normal" title="Logout"/>
+                                <rect key="frame" x="94" y="315.5" width="187.5" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="Fo8-v5-ulb" eventType="touchUpInside" id="Ka7-Qp-XIL"/>
                                 </connections>
@@ -208,6 +212,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9ch-lv-WdD" firstAttribute="centerX" secondItem="ql0-mb-TXq" secondAttribute="centerX" id="0eS-oY-YsE"/>
+                            <constraint firstItem="9ch-lv-WdD" firstAttribute="width" secondItem="ql0-mb-TXq" secondAttribute="width" multiplier="1:2" id="JP6-hv-Xvh"/>
                             <constraint firstItem="9ch-lv-WdD" firstAttribute="centerY" secondItem="ql0-mb-TXq" secondAttribute="centerY" id="LRx-HS-ga9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZuV-7t-IfQ"/>
@@ -259,8 +264,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAL-s2-CbB">
-                                <rect key="frame" x="163.5" y="318.5" width="48" height="30"/>
-                                <state key="normal" title="Logout"/>
+                                <rect key="frame" x="94" y="315.5" width="187.5" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="uY4-jr-6KY" eventType="touchUpInside" id="KDb-Wl-NvI"/>
                                 </connections>
@@ -270,6 +279,7 @@
                         <constraints>
                             <constraint firstItem="JAL-s2-CbB" firstAttribute="centerY" secondItem="pjU-5B-fgh" secondAttribute="centerY" id="bP3-uN-0wU"/>
                             <constraint firstItem="JAL-s2-CbB" firstAttribute="centerX" secondItem="pjU-5B-fgh" secondAttribute="centerX" id="lud-7d-YYn"/>
+                            <constraint firstItem="JAL-s2-CbB" firstAttribute="width" secondItem="pjU-5B-fgh" secondAttribute="width" multiplier="1:2" id="sJa-yY-zKe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AWI-8I-Laj"/>
                     </view>
@@ -586,8 +596,8 @@
                         <viewLayoutGuide key="safeArea" id="0Yu-3u-mfG"/>
                     </view>
                     <connections>
-                        <outlet property="passTextField" destination="Wtw-Js-oU0" id="cns-Ls-3Cn"/>
-                        <outlet property="userTextField" destination="Wtw-Js-oU0" id="Bok-Je-HXN"/>
+                        <outlet property="passTextField" destination="Wtw-Js-oU0" id="q1t-LY-kE5"/>
+                        <outlet property="userTextField" destination="6UE-Sv-Ewn" id="qRX-iy-2lr"/>
                         <segue destination="Vn4-cN-F1r" kind="show" identifier="segue" id="Fhk-C9-AI0"/>
                     </connections>
                 </viewController>
@@ -616,8 +626,12 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVr-Yq-QjP">
-                                <rect key="frame" x="124" y="390" width="126" height="30"/>
-                                <state key="normal" title="Send Notifications"/>
+                                <rect key="frame" x="93.5" y="390" width="187.5" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Send Notifications">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="sendNotificationsButtonPressed:" destination="fi1-Gq-s5s" eventType="touchUpInside" id="Hpk-Cs-Uqm"/>
                                 </connections>
@@ -633,6 +647,7 @@
                             <constraint firstItem="NTF-Go-Mt5" firstAttribute="top" secondItem="dzB-mf-TQ0" secondAttribute="top" id="d2q-Xn-FZJ"/>
                             <constraint firstItem="NTF-Go-Mt5" firstAttribute="leading" secondItem="dzB-mf-TQ0" secondAttribute="leading" constant="16" id="iQo-eu-gSh"/>
                             <constraint firstItem="dVr-Yq-QjP" firstAttribute="centerX" secondItem="dzB-mf-TQ0" secondAttribute="centerX" id="oVu-kp-CiH"/>
+                            <constraint firstItem="dVr-Yq-QjP" firstAttribute="width" secondItem="LVi-uW-8BF" secondAttribute="width" multiplier="1:2" id="qrg-DN-GAK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dzB-mf-TQ0"/>
                     </view>
