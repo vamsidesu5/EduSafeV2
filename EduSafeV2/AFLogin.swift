@@ -96,7 +96,6 @@ struct AFMethods{
             print("Could not get URL")
             return
         }
-
         URLSession.shared.dataTask(with: url){
             (data, response, err) in
             guard let data = data else {return}
@@ -111,7 +110,8 @@ struct AFMethods{
             }
         }.resume()
 
-        URLSession.shared.finishTasksAndInvalidate() // After tasks are completed, session ends
+        // session.finishTasksAndInvalidate() // After tasks are completed, session ends
+
 
     }
     func approveMessage(message_id:Int, completion: @escaping (String?) -> ()){
