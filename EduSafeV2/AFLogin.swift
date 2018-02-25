@@ -11,7 +11,7 @@ import Alamofire
 
 struct AFMethods{
 
-    let endpoint = "hello" // Change this to the url
+    let endpoint = "http://2c3eb790.ngrok.io" // Change this to the url
 
     func loginStudent(username: String, password: String) -> Bool{
 
@@ -28,7 +28,7 @@ struct AFMethods{
                 return
             }
             guard let json = response.result.value as? String else {
-                print("didn't get todo object as JSON from API")
+                print("didn't get object from API")
                 print("Error: \(response.result.error!)")
                 return
             }
@@ -41,33 +41,28 @@ struct AFMethods{
         return false
     }
 
-    func loginAdmin(name: String, password: String) -> Bool{
+    func loginAdmin(name: String, password: String, completion: @escaping (String?) -> ()){
 
         let loginInfo: [String: Any] = ["name": name, "password": password]
-        let updatedEP = endpoint + "/user/loginAdmin/"
+        let updatedEP = endpoint + "/users/loginAdmin/"
 
         var status: String = ""
 
         Alamofire.request(updatedEP, method: .put, parameters: loginInfo, encoding: JSONEncoding.default)
-            .responseJSON { response in
-                guard response.result.error == nil else {
-                    print("There is an error")
-                    print(response.result.error!)
-                    return
-                }
-                guard let json = response.result.value as? String else {
-                    print("didn't get todo object as JSON from API")
+            .responseString { response in
+
+                if let json = response.result.value{
+                    status = json
+                } else {
+                    print("didn't get object from API")
                     print("Error: \(response.result.error!)")
                     return
                 }
-                status = json
-        }
 
-        if status == "Login Success"{
-            return true
-        }
-        return false
+                status = status.replacingOccurrences(of: "\"", with: "")
 
+                completion(status)
+        }
     }
 
     func postMessage(content: String, urgency: Int){

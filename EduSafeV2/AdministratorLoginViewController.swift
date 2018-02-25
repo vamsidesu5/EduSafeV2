@@ -30,13 +30,14 @@ class AdministratorLoginViewController: UIViewController {
         if name != nil && password != nil{
 
             let methods = AFMethods()
-            if methods.loginAdmin(name: name!, password: password!){
-                performSegue(withIdentifier: "segue", sender: self)
-                print("Login Success")
-            }else{
-                print("Failure")
-            }
+            methods.loginAdmin(name: name!, password: password!, completion: { status in
+                if status == "Login Success"{
+                    self.performSegue(withIdentifier: "segue", sender: self)
 
+                }else{
+                    print("Failure")
+                }
+            })
         }
 
     }
