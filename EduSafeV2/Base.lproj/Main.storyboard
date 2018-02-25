@@ -315,8 +315,8 @@
                                     <action selector="sendAlertButtonPressed:" destination="9pg-NM-3Ik" eventType="touchUpInside" id="4D7-ZY-9JN"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9WI-1E-HIO">
-                                <rect key="frame" x="94" y="393" width="265" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9WI-1E-HIO">
+                                <rect key="frame" x="94" y="397" width="265" height="29"/>
                                 <segments>
                                     <segment title="Not Urgent"/>
                                     <segment title="Urgent"/>
@@ -412,20 +412,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zzf-pL-IJ4">
-                                <rect key="frame" x="16" y="87" width="343" height="560"/>
+                                <rect key="frame" x="16" y="93" width="343" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUd-zt-CME">
-                                <rect key="frame" x="16" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                                <rect key="frame" x="16" y="20" width="94" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="Xnk-2s-kgb" eventType="touchUpInside" id="5Qd-ua-vXd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbt-FK-GGc">
-                                <rect key="frame" x="16" y="58" width="93" height="21"/>
+                                <rect key="frame" x="16" y="64" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -434,6 +438,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FUl-qi-GJW" firstAttribute="bottom" secondItem="Zzf-pL-IJ4" secondAttribute="bottom" constant="20" id="558-dq-D2x"/>
+                            <constraint firstItem="JUd-zt-CME" firstAttribute="width" secondItem="RB9-g4-xQH" secondAttribute="width" multiplier="1:4" id="BFi-tJ-n4O"/>
                             <constraint firstItem="Zzf-pL-IJ4" firstAttribute="top" secondItem="sbt-FK-GGc" secondAttribute="bottom" constant="8" id="Eeo-o6-LRQ"/>
                             <constraint firstItem="sbt-FK-GGc" firstAttribute="top" secondItem="JUd-zt-CME" secondAttribute="bottom" constant="8" id="K9U-1w-2Ft"/>
                             <constraint firstItem="sbt-FK-GGc" firstAttribute="leading" secondItem="FUl-qi-GJW" secondAttribute="leading" constant="16" id="NJT-0o-tOR"/>
@@ -524,8 +529,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4c-dp-Rmz">
-                                <rect key="frame" x="56" y="303" width="85" height="23.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4c-dp-Rmz">
+                                <rect key="frame" x="52" y="303" width="89" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -556,7 +561,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="YT0-hJ-4r6" eventType="touchUpInside" id="Q1E-qc-YNp"/>
-                                    <segue destination="Vn4-cN-F1r" kind="show" id="PTZ-fd-9ZF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -584,6 +588,7 @@
                     <connections>
                         <outlet property="passTextField" destination="Wtw-Js-oU0" id="cns-Ls-3Cn"/>
                         <outlet property="userTextField" destination="Wtw-Js-oU0" id="Bok-Je-HXN"/>
+                        <segue destination="Vn4-cN-F1r" kind="show" identifier="segue" id="Fhk-C9-AI0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mnp-e0-obc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -649,20 +654,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SZ9-P7-zPb">
-                                <rect key="frame" x="16" y="87" width="343" height="560"/>
+                                <rect key="frame" x="16" y="93" width="343" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMj-Cd-aAQ">
-                                <rect key="frame" x="16" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                                <rect key="frame" x="16" y="20" width="94" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="QLT-4R-hPw" eventType="touchUpInside" id="xyR-6Q-5nN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRE-SX-4DN">
-                                <rect key="frame" x="16" y="58" width="93" height="21"/>
+                                <rect key="frame" x="16" y="64" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -676,6 +685,7 @@
                             <constraint firstItem="SZ9-P7-zPb" firstAttribute="top" secondItem="TRE-SX-4DN" secondAttribute="bottom" constant="8" id="PSm-OQ-9tk"/>
                             <constraint firstItem="HJi-Fw-u2c" firstAttribute="trailing" secondItem="SZ9-P7-zPb" secondAttribute="trailing" constant="16" id="WTD-EQ-e1s"/>
                             <constraint firstItem="fMj-Cd-aAQ" firstAttribute="leading" secondItem="HJi-Fw-u2c" secondAttribute="leading" constant="16" id="Wpr-fO-T57"/>
+                            <constraint firstItem="fMj-Cd-aAQ" firstAttribute="width" secondItem="xd0-4c-c6m" secondAttribute="width" multiplier="1:4" id="dXC-CG-e3Y"/>
                             <constraint firstItem="SZ9-P7-zPb" firstAttribute="leading" secondItem="HJi-Fw-u2c" secondAttribute="leading" constant="16" id="gWe-Dc-CzN"/>
                             <constraint firstItem="TRE-SX-4DN" firstAttribute="leading" secondItem="HJi-Fw-u2c" secondAttribute="leading" constant="16" id="nya-dj-oda"/>
                         </constraints>
@@ -704,8 +714,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjg-Cg-yrg">
-                                <rect key="frame" x="16" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                                <rect key="frame" x="16" y="20" width="94" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="0yM-AK-Iuu" eventType="touchUpInside" id="1T8-oz-Nnl"/>
                                 </connections>
@@ -738,6 +751,7 @@
                             <constraint firstItem="tGU-K2-50j" firstAttribute="leading" secondItem="4bL-1N-3qm" secondAttribute="leading" constant="16" id="FwG-Tb-nbg"/>
                             <constraint firstItem="8AY-vK-8gd" firstAttribute="top" secondItem="tGU-K2-50j" secondAttribute="bottom" constant="8" id="NzA-E1-xGP"/>
                             <constraint firstItem="4bL-1N-3qm" firstAttribute="bottom" secondItem="8V9-0D-VNu" secondAttribute="bottom" constant="20" id="SbN-JR-ANw"/>
+                            <constraint firstItem="hjg-Cg-yrg" firstAttribute="width" secondItem="tY3-gU-5VA" secondAttribute="width" multiplier="1:4" id="UVq-aL-VD3"/>
                             <constraint firstItem="tGU-K2-50j" firstAttribute="top" secondItem="ytP-KB-Equ" secondAttribute="bottom" constant="8" id="W2K-Ey-kLZ"/>
                             <constraint firstItem="8V9-0D-VNu" firstAttribute="centerX" secondItem="4bL-1N-3qm" secondAttribute="centerX" id="fcB-0D-ISs"/>
                             <constraint firstItem="8AY-vK-8gd" firstAttribute="centerX" secondItem="4bL-1N-3qm" secondAttribute="centerX" id="h8m-Hj-VhG"/>
