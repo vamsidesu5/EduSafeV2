@@ -9,7 +9,7 @@
 import UIKit
 
 class StudentReportViewController: UIViewController {
-    var urgency = 1;
+    var urgency = 1
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var descriptionTextField: UITextView!
     override func viewDidLoad() {
@@ -25,8 +25,23 @@ class StudentReportViewController: UIViewController {
     }
     
     @IBAction func sendAlertButtonPressed(_ sender: Any) {
-        let description = descriptionTextField.text;
+        let description = descriptionTextField.text
+
         // send the description and the urgency to the server
+
+        if description != nil{
+            let methods = AFMethods()
+            methods.postMessage(content: description!, urgency: urgency, completion: { success in
+                if success == true{
+                    print("Success")
+
+                }else{
+                    print("Failure")
+                }
+
+            })
+
+        }
     }
     
     @IBAction func changedSegmentedControl(_ sender: Any)
@@ -34,11 +49,11 @@ class StudentReportViewController: UIViewController {
         switch segmentedControl.selectedSegmentIndex
         {
         case 0:
-            urgency = 1;
+            urgency = 1
         case 1:
-            urgency = 2;
+            urgency = 2
         case 2:
-            urgency = 3;
+            urgency = 3
         default:
             break
         }
