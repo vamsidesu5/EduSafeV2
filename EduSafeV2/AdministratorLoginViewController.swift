@@ -31,11 +31,10 @@ class AdministratorLoginViewController: UIViewController {
 
             let methods = AFMethods()
             if methods.loginAdmin(name: name!, password: password!){
-
-
+                performSegue(withIdentifier: "segue", sender: self)
+                print("Login Success")
             }else{
-
-
+                print("Failure")
             }
 
         }
