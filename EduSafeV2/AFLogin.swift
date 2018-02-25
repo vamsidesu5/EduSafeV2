@@ -15,6 +15,8 @@ struct AFMethods{
 
     func loginStudent(username: String, password: String){
 
+        let loginInfo: [String: Any] = ["username": username, "password": password]
+
 
     }
 
@@ -25,7 +27,7 @@ struct AFMethods{
 
     func postMessage(content: String, urgency: Int){
 
-
+        let messageInfo: [String: Any] = ["content": content, "urgency": urgency]
 
     }
 
@@ -36,7 +38,7 @@ struct AFMethods{
     }
 
     func approveMessage(username: String, password: String){
-        
+
     }
 
 
