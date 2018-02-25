@@ -119,7 +119,7 @@ struct AFMethods{
 
         var status = ""
 
-        Alamofire.request(updatedEP, method: .post, parameters: messageInfo, encoding: JSONEncoding.default)
+        Alamofire.request(updatedEP, method: .put, parameters: messageInfo, encoding: JSONEncoding.default)
             .responseJSON { response in
 
                 if let json = response.result.value{

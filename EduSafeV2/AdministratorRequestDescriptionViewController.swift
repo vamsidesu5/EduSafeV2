@@ -33,7 +33,11 @@ class AdministratorRequestDescriptionViewController: UIViewController {
             }else{
                 // Send notification that it failed
             }
-
+                requestFeed.remove(at: myIndex2)
+                methods.createFeed()
+                requests = requestFeed
+                viewToReload.setNeedsLayout()
+                viewToReload.layoutIfNeeded()
         })
         self.dismiss(animated: true, completion: nil)
     }
